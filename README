@@ -1,8 +1,0 @@
-This project develop portsip for kku calling
-
-path = /testSDK/PortSipTest/
-
-Config API
-	- SearchTableViewController.swift ;Concat Web service
-	- SearchTableViewForFacultyNumberController.swift ;Sub Concat Web service
-	- AppDelegate.swift ;Display Name Webservice (variable "requestURL")
