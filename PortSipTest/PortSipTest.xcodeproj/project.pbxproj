@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC0480961D3493EB00EC31C0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0480951D3493EB00EC31C0 /* FirstViewController.swift */; };
+		BC35FB731D34CA5A00081BC5 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35FB721D34CA5A00081BC5 /* MoreViewController.swift */; };
+		BC548A271D2C9DD80061849E /* CallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC548A221D2C9DD80061849E /* CallAPI.swift */; };
+		BC548A281D2C9DD80061849E /* CallDepartmentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC548A231D2C9DD80061849E /* CallDepartmentID.swift */; };
+		BC548A291D2C9DD80061849E /* CallFacultyNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC548A241D2C9DD80061849E /* CallFacultyNumber.swift */; };
+		BC548A2A1D2C9DD80061849E /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC548A251D2C9DD80061849E /* Department.swift */; };
+		BC548A2B1D2C9DD80061849E /* Faculty.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC548A261D2C9DD80061849E /* Faculty.swift */; };
+		BC548A2E1D2CA0200061849E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC548A2C1D2CA0200061849E /* Main.storyboard */; };
+		BC548A331D2CA9F30061849E /* NumpadCallingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC548A321D2CA9F30061849E /* NumpadCallingViewController.swift */; };
+		BC71695E1D1927BF000843D6 /* CallOutDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71695D1D1927BF000843D6 /* CallOutDemoViewController.swift */; };
+		BC7C2BAE1D40818C00774CDD /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C2BAD1D40818C00774CDD /* HistoryTableViewCell.swift */; };
+		BCA3213A1D18D6F5002A8233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA321391D18D6F5002A8233 /* AppDelegate.swift */; };
+		BCA321411D18D6F5002A8233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA321401D18D6F5002A8233 /* Assets.xcassets */; };
+		BCA321441D18D6F5002A8233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA321421D18D6F5002A8233 /* LaunchScreen.storyboard */; };
+		BCA3214F1D18D6F5002A8233 /* PortSipTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA3214E1D18D6F5002A8233 /* PortSipTestTests.swift */; };
+		BCA3215A1D18D6F5002A8233 /* PortSipTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA321591D18D6F5002A8233 /* PortSipTestUITests.swift */; };
+		BCA942561D2E37D30080F1AB /* PortSIPLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA942551D2E37D30080F1AB /* PortSIPLib.framework */; };
+		BCA942751D2E38470080F1AB /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9425B1D2E38470080F1AB /* Contact.m */; };
+		BCA942761D2E38470080F1AB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9425D1D2E38470080F1AB /* LoginViewController.m */; };
+		BCA942771D2E38470080F1AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9425F1D2E38470080F1AB /* AppDelegate.m */; };
+		BCA942781D2E38470080F1AB /* NumpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA942611D2E38470080F1AB /* NumpadViewController.m */; };
+		BCA942791D2E38470080F1AB /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA942631D2E38470080F1AB /* Session.m */; };
+		BCA9427A1D2E38470080F1AB /* ringtone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCA942641D2E38470080F1AB /* ringtone.mp3 */; };
+		BCA9427B1D2E38470080F1AB /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA942661D2E38470080F1AB /* SettingCell.m */; };
+		BCA9427C1D2E38470080F1AB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA942681D2E38470080F1AB /* SettingsViewController.m */; };
+		BCA9427D1D2E38470080F1AB /* SoundService.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9426A1D2E38470080F1AB /* SoundService.m */; };
+		BCA9427E1D2E38470080F1AB /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9426C1D2E38470080F1AB /* VideoViewController.m */; };
+		BCA9427F1D2E38470080F1AB /* LineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9426E1D2E38470080F1AB /* LineTableViewController.m */; };
+		BCA942801D2E38470080F1AB /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA942701D2E38470080F1AB /* ContactCell.m */; };
+		BCA942811D2E38470080F1AB /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA942721D2E38470080F1AB /* IMViewController.m */; };
+		BCA942821D2E38470080F1AB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA942741D2E38470080F1AB /* Reachability.m */; };
+		BCA942841D2E39340080F1AB /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA942831D2E39340080F1AB /* VideoToolbox.framework */; };
+		BCA942861D2E393C0080F1AB /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA942851D2E393C0080F1AB /* libresolv.tbd */; };
+		BCA942881D2E39450080F1AB /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA942871D2E39450080F1AB /* libstdc++.6.tbd */; };
+		BCA9428C1D2E42630080F1AB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA9428B1D2E42630080F1AB /* Login.swift */; };
+		BCAB70721D18D86000ACE842 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB70701D18D86000ACE842 /* SearchTableViewController.swift */; };
+		BCAB70731D18D86000ACE842 /* SearchTableViewForFacultyNumberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB70711D18D86000ACE842 /* SearchTableViewForFacultyNumberController.swift */; };
+		BCAB70781D18E47400ACE842 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB70771D18E47400ACE842 /* HistoryTableViewController.swift */; };
+		BCB2AEC81D2F62CA006D7959 /* AnswerCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2AEC71D2F62CA006D7959 /* AnswerCallViewController.swift */; };
+		BCE55A1F1D3356FE00BA1838 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE55A1E1D3356FE00BA1838 /* Keyboard.swift */; };
+		BCE55A211D33570500BA1838 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE55A201D33570500BA1838 /* Keyboard.xib */; };
+		BCF590521D1A2B0D00D4AEB8 /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF590511D1A2B0D00D4AEB8 /* HistoryData.swift */; };
+		BCF590561D1A3A0800D4AEB8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF590551D1A3A0800D4AEB8 /* LoginViewController.swift */; };
+		BCF5905A1D1A7C7400D4AEB8 /* NumpadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF590591D1A7C7400D4AEB8 /* NumpadViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCA3214B1D18D6F5002A8233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA3212E1D18D6F5002A8233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA321351D18D6F5002A8233;
+			remoteInfo = PortSipTest;
+		};
+		BCA321561D18D6F5002A8233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA3212E1D18D6F5002A8233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA321351D18D6F5002A8233;
+			remoteInfo = PortSipTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC0480951D3493EB00EC31C0 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		BC35FB721D34CA5A00081BC5 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		BC548A221D2C9DD80061849E /* CallAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallAPI.swift; path = PortSipTest/CallAPI.swift; sourceTree = SOURCE_ROOT; };
+		BC548A231D2C9DD80061849E /* CallDepartmentID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallDepartmentID.swift; path = PortSipTest/CallDepartmentID.swift; sourceTree = SOURCE_ROOT; };
+		BC548A241D2C9DD80061849E /* CallFacultyNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallFacultyNumber.swift; path = PortSipTest/CallFacultyNumber.swift; sourceTree = SOURCE_ROOT; };
+		BC548A251D2C9DD80061849E /* Department.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Department.swift; path = PortSipTest/Department.swift; sourceTree = SOURCE_ROOT; };
+		BC548A261D2C9DD80061849E /* Faculty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Faculty.swift; path = PortSipTest/Faculty.swift; sourceTree = SOURCE_ROOT; };
+		BC548A2D1D2CA0200061849E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC548A321D2CA9F30061849E /* NumpadCallingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpadCallingViewController.swift; sourceTree = "<group>"; };
+		BC71695D1D1927BF000843D6 /* CallOutDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallOutDemoViewController.swift; sourceTree = "<group>"; };
+		BC7C2BAD1D40818C00774CDD /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		BCA321361D18D6F5002A8233 /* PortSipTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortSipTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA321391D18D6F5002A8233 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCA321401D18D6F5002A8233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCA321431D18D6F5002A8233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCA321451D18D6F5002A8233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA3214A1D18D6F5002A8233 /* PortSipTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortSipTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA3214E1D18D6F5002A8233 /* PortSipTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortSipTestTests.swift; sourceTree = "<group>"; };
+		BCA321501D18D6F5002A8233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA321551D18D6F5002A8233 /* PortSipTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortSipTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA321591D18D6F5002A8233 /* PortSipTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortSipTestUITests.swift; sourceTree = "<group>"; };
+		BCA3215B1D18D6F5002A8233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA942551D2E37D30080F1AB /* PortSIPLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PortSIPLib.framework; path = PortSipTest/PortSIPLib.framework; sourceTree = "<group>"; };
+		BCA942591D2E38460080F1AB /* PortSipTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PortSipTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		BCA9425A1D2E38470080F1AB /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		BCA9425B1D2E38470080F1AB /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		BCA9425C1D2E38470080F1AB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BCA9425D1D2E38470080F1AB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BCA9425E1D2E38470080F1AB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCA9425F1D2E38470080F1AB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCA942601D2E38470080F1AB /* NumpadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumpadViewController.h; sourceTree = "<group>"; };
+		BCA942611D2E38470080F1AB /* NumpadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumpadViewController.m; sourceTree = "<group>"; };
+		BCA942621D2E38470080F1AB /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		BCA942631D2E38470080F1AB /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		BCA942641D2E38470080F1AB /* ringtone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ringtone.mp3; sourceTree = "<group>"; };
+		BCA942651D2E38470080F1AB /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		BCA942661D2E38470080F1AB /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		BCA942671D2E38470080F1AB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		BCA942681D2E38470080F1AB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		BCA942691D2E38470080F1AB /* SoundService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundService.h; sourceTree = "<group>"; };
+		BCA9426A1D2E38470080F1AB /* SoundService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundService.m; sourceTree = "<group>"; };
+		BCA9426B1D2E38470080F1AB /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		BCA9426C1D2E38470080F1AB /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		BCA9426D1D2E38470080F1AB /* LineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineTableViewController.h; sourceTree = "<group>"; };
+		BCA9426E1D2E38470080F1AB /* LineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineTableViewController.m; sourceTree = "<group>"; };
+		BCA9426F1D2E38470080F1AB /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
+		BCA942701D2E38470080F1AB /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
+		BCA942711D2E38470080F1AB /* IMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMViewController.h; sourceTree = "<group>"; };
+		BCA942721D2E38470080F1AB /* IMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMViewController.m; sourceTree = "<group>"; };
+		BCA942731D2E38470080F1AB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BCA942741D2E38470080F1AB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		BCA942831D2E39340080F1AB /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		BCA942851D2E393C0080F1AB /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		BCA942871D2E39450080F1AB /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		BCA9428B1D2E42630080F1AB /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		BCAB70701D18D86000ACE842 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		BCAB70711D18D86000ACE842 /* SearchTableViewForFacultyNumberController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewForFacultyNumberController.swift; sourceTree = "<group>"; };
+		BCAB70771D18E47400ACE842 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		BCB2AEC71D2F62CA006D7959 /* AnswerCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCallViewController.swift; sourceTree = "<group>"; };
+		BCE55A1E1D3356FE00BA1838 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		BCE55A201D33570500BA1838 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
+		BCF590511D1A2B0D00D4AEB8 /* HistoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
+		BCF590551D1A3A0800D4AEB8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BCF590591D1A7C7400D4AEB8 /* NumpadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpadViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCA321331D18D6F5002A8233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA942881D2E39450080F1AB /* libstdc++.6.tbd in Frameworks */,
+				BCA942861D2E393C0080F1AB /* libresolv.tbd in Frameworks */,
+				BCA942841D2E39340080F1AB /* VideoToolbox.framework in Frameworks */,
+				BCA942561D2E37D30080F1AB /* PortSIPLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA321471D18D6F5002A8233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA321521D18D6F5002A8233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCA3212D1D18D6F5002A8233 = {
+			isa = PBXGroup;
+			children = (
+				BCA942571D2E37FB0080F1AB /* Frameworks */,
+				BCA942541D2E37AE0080F1AB /* CallFunction */,
+				BCA321381D18D6F5002A8233 /* PortSipTest */,
+				BCA3214D1D18D6F5002A8233 /* PortSipTestTests */,
+				BCA321581D18D6F5002A8233 /* PortSipTestUITests */,
+				BCA321371D18D6F5002A8233 /* Products */,
+				BCAB70611D18D7EC00ACE842 /* CallAPI */,
+				BCA942581D2E38130080F1AB /* Supported */,
+				BCF590541D1A2B2200D4AEB8 /* SupportData */,
+			);
+			sourceTree = "<group>";
+		};
+		BCA321371D18D6F5002A8233 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCA321361D18D6F5002A8233 /* PortSipTest.app */,
+				BCA3214A1D18D6F5002A8233 /* PortSipTestTests.xctest */,
+				BCA321551D18D6F5002A8233 /* PortSipTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCA321381D18D6F5002A8233 /* PortSipTest */ = {
+			isa = PBXGroup;
+			children = (
+				BCA321391D18D6F5002A8233 /* AppDelegate.swift */,
+				BCAB70701D18D86000ACE842 /* SearchTableViewController.swift */,
+				BCAB70711D18D86000ACE842 /* SearchTableViewForFacultyNumberController.swift */,
+				BCAB70771D18E47400ACE842 /* HistoryTableViewController.swift */,
+				BC71695D1D1927BF000843D6 /* CallOutDemoViewController.swift */,
+				BCF590551D1A3A0800D4AEB8 /* LoginViewController.swift */,
+				BCF590591D1A7C7400D4AEB8 /* NumpadViewController.swift */,
+				BC548A321D2CA9F30061849E /* NumpadCallingViewController.swift */,
+				BCB2AEC71D2F62CA006D7959 /* AnswerCallViewController.swift */,
+				BCA321401D18D6F5002A8233 /* Assets.xcassets */,
+				BC548A2C1D2CA0200061849E /* Main.storyboard */,
+				BCA321421D18D6F5002A8233 /* LaunchScreen.storyboard */,
+				BCE55A201D33570500BA1838 /* Keyboard.xib */,
+				BCE55A1E1D3356FE00BA1838 /* Keyboard.swift */,
+				BCA321451D18D6F5002A8233 /* Info.plist */,
+				BC0480951D3493EB00EC31C0 /* FirstViewController.swift */,
+				BC35FB721D34CA5A00081BC5 /* MoreViewController.swift */,
+				BC7C2BAD1D40818C00774CDD /* HistoryTableViewCell.swift */,
+			);
+			path = PortSipTest;
+			sourceTree = "<group>";
+		};
+		BCA3214D1D18D6F5002A8233 /* PortSipTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCA3214E1D18D6F5002A8233 /* PortSipTestTests.swift */,
+				BCA321501D18D6F5002A8233 /* Info.plist */,
+			);
+			path = PortSipTestTests;
+			sourceTree = "<group>";
+		};
+		BCA321581D18D6F5002A8233 /* PortSipTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCA321591D18D6F5002A8233 /* PortSipTestUITests.swift */,
+				BCA3215B1D18D6F5002A8233 /* Info.plist */,
+			);
+			path = PortSipTestUITests;
+			sourceTree = "<group>";
+		};
+		BCA942541D2E37AE0080F1AB /* CallFunction */ = {
+			isa = PBXGroup;
+			children = (
+				BCA9428B1D2E42630080F1AB /* Login.swift */,
+			);
+			name = CallFunction;
+			sourceTree = "<group>";
+		};
+		BCA942571D2E37FB0080F1AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCA942871D2E39450080F1AB /* libstdc++.6.tbd */,
+				BCA942851D2E393C0080F1AB /* libresolv.tbd */,
+				BCA942831D2E39340080F1AB /* VideoToolbox.framework */,
+				BCA942551D2E37D30080F1AB /* PortSIPLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCA942581D2E38130080F1AB /* Supported */ = {
+			isa = PBXGroup;
+			children = (
+				BCA9425A1D2E38470080F1AB /* Contact.h */,
+				BCA9425B1D2E38470080F1AB /* Contact.m */,
+				BCA9425C1D2E38470080F1AB /* LoginViewController.h */,
+				BCA9425D1D2E38470080F1AB /* LoginViewController.m */,
+				BCA9425E1D2E38470080F1AB /* AppDelegate.h */,
+				BCA9425F1D2E38470080F1AB /* AppDelegate.m */,
+				BCA942601D2E38470080F1AB /* NumpadViewController.h */,
+				BCA942611D2E38470080F1AB /* NumpadViewController.m */,
+				BCA942621D2E38470080F1AB /* Session.h */,
+				BCA942631D2E38470080F1AB /* Session.m */,
+				BCA942641D2E38470080F1AB /* ringtone.mp3 */,
+				BCA942651D2E38470080F1AB /* SettingCell.h */,
+				BCA942661D2E38470080F1AB /* SettingCell.m */,
+				BCA942671D2E38470080F1AB /* SettingsViewController.h */,
+				BCA942681D2E38470080F1AB /* SettingsViewController.m */,
+				BCA942691D2E38470080F1AB /* SoundService.h */,
+				BCA9426A1D2E38470080F1AB /* SoundService.m */,
+				BCA9426B1D2E38470080F1AB /* VideoViewController.h */,
+				BCA9426C1D2E38470080F1AB /* VideoViewController.m */,
+				BCA9426D1D2E38470080F1AB /* LineTableViewController.h */,
+				BCA9426E1D2E38470080F1AB /* LineTableViewController.m */,
+				BCA9426F1D2E38470080F1AB /* ContactCell.h */,
+				BCA942701D2E38470080F1AB /* ContactCell.m */,
+				BCA942711D2E38470080F1AB /* IMViewController.h */,
+				BCA942721D2E38470080F1AB /* IMViewController.m */,
+				BCA942731D2E38470080F1AB /* Reachability.h */,
+				BCA942741D2E38470080F1AB /* Reachability.m */,
+				BCA942591D2E38460080F1AB /* PortSipTest-Bridging-Header.h */,
+			);
+			name = Supported;
+			sourceTree = "<group>";
+		};
+		BCAB70611D18D7EC00ACE842 /* CallAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BC548A221D2C9DD80061849E /* CallAPI.swift */,
+				BC548A231D2C9DD80061849E /* CallDepartmentID.swift */,
+				BC548A241D2C9DD80061849E /* CallFacultyNumber.swift */,
+				BC548A251D2C9DD80061849E /* Department.swift */,
+				BC548A261D2C9DD80061849E /* Faculty.swift */,
+			);
+			name = CallAPI;
+			path = ../../../UIMixTest/UIMixTest;
+			sourceTree = "<group>";
+		};
+		BCF590541D1A2B2200D4AEB8 /* SupportData */ = {
+			isa = PBXGroup;
+			children = (
+				BCF590511D1A2B0D00D4AEB8 /* HistoryData.swift */,
+			);
+			name = SupportData;
+			path = PortSipTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCA321351D18D6F5002A8233 /* PortSipTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA3215E1D18D6F5002A8233 /* Build configuration list for PBXNativeTarget "PortSipTest" */;
+			buildPhases = (
+				BCA321321D18D6F5002A8233 /* Sources */,
+				BCA321331D18D6F5002A8233 /* Frameworks */,
+				BCA321341D18D6F5002A8233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PortSipTest;
+			productName = PortSipTest;
+			productReference = BCA321361D18D6F5002A8233 /* PortSipTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCA321491D18D6F5002A8233 /* PortSipTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA321611D18D6F5002A8233 /* Build configuration list for PBXNativeTarget "PortSipTestTests" */;
+			buildPhases = (
+				BCA321461D18D6F5002A8233 /* Sources */,
+				BCA321471D18D6F5002A8233 /* Frameworks */,
+				BCA321481D18D6F5002A8233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCA3214C1D18D6F5002A8233 /* PBXTargetDependency */,
+			);
+			name = PortSipTestTests;
+			productName = PortSipTestTests;
+			productReference = BCA3214A1D18D6F5002A8233 /* PortSipTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCA321541D18D6F5002A8233 /* PortSipTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA321641D18D6F5002A8233 /* Build configuration list for PBXNativeTarget "PortSipTestUITests" */;
+			buildPhases = (
+				BCA321511D18D6F5002A8233 /* Sources */,
+				BCA321521D18D6F5002A8233 /* Frameworks */,
+				BCA321531D18D6F5002A8233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCA321571D18D6F5002A8233 /* PBXTargetDependency */,
+			);
+			name = PortSipTestUITests;
+			productName = PortSipTestUITests;
+			productReference = BCA321551D18D6F5002A8233 /* PortSipTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCA3212E1D18D6F5002A8233 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = RnD;
+				TargetAttributes = {
+					BCA321351D18D6F5002A8233 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = DV9J8JBX22;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+					BCA321491D18D6F5002A8233 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = BCA321351D18D6F5002A8233;
+					};
+					BCA321541D18D6F5002A8233 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = BCA321351D18D6F5002A8233;
+					};
+				};
+			};
+			buildConfigurationList = BCA321311D18D6F5002A8233 /* Build configuration list for PBXProject "PortSipTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCA3212D1D18D6F5002A8233;
+			productRefGroup = BCA321371D18D6F5002A8233 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCA321351D18D6F5002A8233 /* PortSipTest */,
+				BCA321491D18D6F5002A8233 /* PortSipTestTests */,
+				BCA321541D18D6F5002A8233 /* PortSipTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCA321341D18D6F5002A8233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA9427A1D2E38470080F1AB /* ringtone.mp3 in Resources */,
+				BC548A2E1D2CA0200061849E /* Main.storyboard in Resources */,
+				BCE55A211D33570500BA1838 /* Keyboard.xib in Resources */,
+				BCA321441D18D6F5002A8233 /* LaunchScreen.storyboard in Resources */,
+				BCA321411D18D6F5002A8233 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA321481D18D6F5002A8233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA321531D18D6F5002A8233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCA321321D18D6F5002A8233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC548A331D2CA9F30061849E /* NumpadCallingViewController.swift in Sources */,
+				BCA942781D2E38470080F1AB /* NumpadViewController.m in Sources */,
+				BCF590561D1A3A0800D4AEB8 /* LoginViewController.swift in Sources */,
+				BCA9427F1D2E38470080F1AB /* LineTableViewController.m in Sources */,
+				BCA3213A1D18D6F5002A8233 /* AppDelegate.swift in Sources */,
+				BC35FB731D34CA5A00081BC5 /* MoreViewController.swift in Sources */,
+				BCA942801D2E38470080F1AB /* ContactCell.m in Sources */,
+				BC548A2B1D2C9DD80061849E /* Faculty.swift in Sources */,
+				BCA9428C1D2E42630080F1AB /* Login.swift in Sources */,
+				BC548A271D2C9DD80061849E /* CallAPI.swift in Sources */,
+				BCA9427C1D2E38470080F1AB /* SettingsViewController.m in Sources */,
+				BC548A2A1D2C9DD80061849E /* Department.swift in Sources */,
+				BCF5905A1D1A7C7400D4AEB8 /* NumpadViewController.swift in Sources */,
+				BCA942751D2E38470080F1AB /* Contact.m in Sources */,
+				BCA942761D2E38470080F1AB /* LoginViewController.m in Sources */,
+				BCB2AEC81D2F62CA006D7959 /* AnswerCallViewController.swift in Sources */,
+				BCAB70721D18D86000ACE842 /* SearchTableViewController.swift in Sources */,
+				BC548A281D2C9DD80061849E /* CallDepartmentID.swift in Sources */,
+				BCAB70781D18E47400ACE842 /* HistoryTableViewController.swift in Sources */,
+				BC71695E1D1927BF000843D6 /* CallOutDemoViewController.swift in Sources */,
+				BCA942791D2E38470080F1AB /* Session.m in Sources */,
+				BCAB70731D18D86000ACE842 /* SearchTableViewForFacultyNumberController.swift in Sources */,
+				BCA9427E1D2E38470080F1AB /* VideoViewController.m in Sources */,
+				BCE55A1F1D3356FE00BA1838 /* Keyboard.swift in Sources */,
+				BCA9427D1D2E38470080F1AB /* SoundService.m in Sources */,
+				BCA942771D2E38470080F1AB /* AppDelegate.m in Sources */,
+				BCF590521D1A2B0D00D4AEB8 /* HistoryData.swift in Sources */,
+				BCA9427B1D2E38470080F1AB /* SettingCell.m in Sources */,
+				BCA942811D2E38470080F1AB /* IMViewController.m in Sources */,
+				BC0480961D3493EB00EC31C0 /* FirstViewController.swift in Sources */,
+				BC7C2BAE1D40818C00774CDD /* HistoryTableViewCell.swift in Sources */,
+				BCA942821D2E38470080F1AB /* Reachability.m in Sources */,
+				BC548A291D2C9DD80061849E /* CallFacultyNumber.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA321461D18D6F5002A8233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA3214F1D18D6F5002A8233 /* PortSipTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA321511D18D6F5002A8233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA3215A1D18D6F5002A8233 /* PortSipTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCA3214C1D18D6F5002A8233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA321351D18D6F5002A8233 /* PortSipTest */;
+			targetProxy = BCA3214B1D18D6F5002A8233 /* PBXContainerItemProxy */;
+		};
+		BCA321571D18D6F5002A8233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA321351D18D6F5002A8233 /* PortSipTest */;
+			targetProxy = BCA321561D18D6F5002A8233 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC548A2C1D2CA0200061849E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC548A2D1D2CA0200061849E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCA321421D18D6F5002A8233 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCA321431D18D6F5002A8233 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCA3215C1D18D6F5002A8233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCA3215D1D18D6F5002A8233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCA3215F1D18D6F5002A8233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PortSipTest",
+				);
+				INFOPLIST_FILE = PortSipTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com11.ham01.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PortSipTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCA321601D18D6F5002A8233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PortSipTest",
+				);
+				INFOPLIST_FILE = PortSipTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com11.ham01.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PortSipTest-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCA321621D18D6F5002A8233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PortSipTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com11.PortSipTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortSipTest.app/PortSipTest";
+			};
+			name = Debug;
+		};
+		BCA321631D18D6F5002A8233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PortSipTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com11.PortSipTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortSipTest.app/PortSipTest";
+			};
+			name = Release;
+		};
+		BCA321651D18D6F5002A8233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PortSipTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com11.PortSipTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PortSipTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BCA321661D18D6F5002A8233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PortSipTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com11.PortSipTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PortSipTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCA321311D18D6F5002A8233 /* Build configuration list for PBXProject "PortSipTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA3215C1D18D6F5002A8233 /* Debug */,
+				BCA3215D1D18D6F5002A8233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA3215E1D18D6F5002A8233 /* Build configuration list for PBXNativeTarget "PortSipTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA3215F1D18D6F5002A8233 /* Debug */,
+				BCA321601D18D6F5002A8233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA321611D18D6F5002A8233 /* Build configuration list for PBXNativeTarget "PortSipTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA321621D18D6F5002A8233 /* Debug */,
+				BCA321631D18D6F5002A8233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA321641D18D6F5002A8233 /* Build configuration list for PBXNativeTarget "PortSipTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA321651D18D6F5002A8233 /* Debug */,
+				BCA321661D18D6F5002A8233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCA3212E1D18D6F5002A8233 /* Project object */;
+}
