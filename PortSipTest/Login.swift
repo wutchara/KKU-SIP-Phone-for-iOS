@@ -16,7 +16,6 @@ class Login{
     var lKey: Int32?
     var sessionID: Int?
     var sipURL: String = ""
-    var autoRegisterTimer: NSTimer?
 
     var kUsername: String
     var kDisplayName: String
@@ -73,123 +72,6 @@ class Login{
     
     func setDisplayName(name: String) {
         kDisplayName = name
-    }
-    
-    
-    
-    
-    
-    
-    // MAKE -- ONLINE AND OFFLINE STATUS
-    
-    func online() {
-
-        if(sipInitialized){
-            print("already login")
-        } else {
-        
-            //intial
-            setInit()
-            if(ret != 0) {
-                print("initialize failure ErrorCode = \(ret)")
-                return
-            } else {
-                print("initialize success")
-            }
-        
-            // when occur some error check local ip and local port define method
-            var localIPaddress = "0.0.0.0"
-            if (transport == TRANSPORT_TCP || transport == TRANSPORT_TLS) {
-                print("###### use TCP or TLS transport ######")
-                let nicNumber = portSIP.getNICNums()
-                for i in 0..<nicNumber {
-                    print("localIP = \(i)")
-                    portSIP.getLocalIpAddress(i)
-                }
-                localIPaddress = portSIP.getLocalIpAddress(0)
-            } else {
-                print("###### use UDP transport ######")
-            }
-            
-            let localPort:Int32  = 10000 + Int32(arc4random_uniform(1000))
-            
-            setUserRet(localIPaddress, localPort: localPort)
-            if(ret != 0) {
-                print("set user failure ErrorCode = \(ret)")
-                return
-            } else {
-                print("set user success")
-                print(localPort)
-                print(localIPaddress)
-            }
-    
-            setLkey()
-            if(lKey == ECoreTrialVersionLicenseKey) {
-                print("set Licenkey success")
-            } else {
-                print("set Licenkey failure ErrorCode = \(ret)")
-                return
-            }
-            
-            portSIP.addAudioCodec(AUDIOCODEC_PCMA)
-            portSIP.addAudioCodec(AUDIOCODEC_PCMU)
-            portSIP.addAudioCodec(AUDIOCODEC_SPEEX)
-            portSIP.addAudioCodec(AUDIOCODEC_G729)
-            portSIP.addVideoCodec(VIDEO_CODEC_H264)
-            portSIP.setVideoBitrate(300)
-            portSIP.setVideoFrameRate(10)
-            portSIP.setVideoResolution(352, height: 288)
-            portSIP.setAudioSamples(20, maxPtime: 60)
-            portSIP.setVideoDeviceId(1)
-            portSIP.setVideoNackStatus(true)
-            portSIP.enableVideoDecoderCallback(true)
-        
-            registerServer()
-            if(ret != 0) {
-                portSIP.unInitialize()
-                print("register server failure ErrorCode = \(ret)")
-                return
-            } else {
-                print("register server success")
-            }
-            
-            sipURL = "sip:\(kUsername):\(kUserDomain)"
-            
-            sipInitialized = true
-        }
-        
-    }
-    
-    func offline() {
-
-        if(sipInitialized) {
-            portSIP.unRegisterServer()
-            portSIP.unInitialize()
-            sipInitialized = false
-            
-            print("logout..")
-        }
-        
-    }
-    
-    func autoReRegisterTimer() {
-        portSIP.refreshRegisterServer(0)
-        print("process autoRegisterTimer")
-        
-    }
-    
-    func onRegisterSuccess(statusCode: Int32, statusText: UnsafeMutablePointer<Int8>)-> Int {
-        sipRegistered = true
-        return 0
-        
-    }
-    
-    func onRegisterFailure(statusCode: Int32, statusText: UnsafeMutablePointer<Int8>)-> Int {
-        if(sipRegistered){
-            autoRegisterTimer = NSTimer(timeInterval: 60, target: self, selector: "autoReRegisterTimer:", userInfo: nil, repeats: false)
-        }
-        return 0
-        
     }
     
 }
